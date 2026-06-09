@@ -18,7 +18,7 @@ herepluginManagement {
 }
 
 plugins {
-    id("dev.flutter.flutter-plugin-loader") version "1.0.0"
+    id("dev.flutter.flutter-plugin-loader") version "1.0.0" apply false
 
     id("com.android.application") version "8.6.0" apply false
 
