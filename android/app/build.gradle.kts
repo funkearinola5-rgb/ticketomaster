@@ -1,21 +1,14 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
     id("org.jetbrains.kotlin.android")
     id("dev.flutter.flutter-gradle-plugin")
-    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.ticketmaster.mobile.android"
     compileSdk = flutter.compileSdkVersion
-
-    defaultConfig {
-        applicationId = "com.ticketmaster.mobile.android"
-        minSdk = 23
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
-    }
+    ndkVersion = "29.0.14206865"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -24,6 +17,14 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
+    }
+
+    defaultConfig {
+        applicationId = "com.ticketmaster.mobile.android"
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
     }
 
     buildTypes {
