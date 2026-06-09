@@ -12,4 +12,13 @@ plugins {
     id("com.google.gms.google-services") version "4.4.3" apply false
 }
 
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "ticketomaster"
 include(":app")
