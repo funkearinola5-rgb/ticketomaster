@@ -1,4 +1,4 @@
-herepluginManagement {
+pluginManagement {
     val flutterSdkPath =
         run {
             val properties = java.util.Properties()
@@ -20,13 +20,10 @@ herepluginManagement {
 plugins {
     id("dev.flutter.flutter-plugin-loader") version "1.0.0"
 
-    // Android Gradle Plugin
-    id("com.android.application") version "8.11.1" apply false
+    id("com.android.application") version "8.3.2" apply false
 
-    // Kotlin
-    id("org.jetbrains.kotlin.android") version "2.1.21" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.24" apply false
 
-    // Firebase Google Services
     id("com.google.gms.google-services") version "4.4.3" apply false
 }
 
